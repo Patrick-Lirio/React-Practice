@@ -31,16 +31,17 @@ const ToggleButton = ({
 
   const label = ariaLabel ?? (isOn ? "Turn off" : "Turn on");
   return (
-    <>
+    <div>
       <button
         type="button"
         aria-checked={isOn}
         aria-label={label}
         onClick={handleToggle}
+        className="border-2 shadow-2xl border-sky-100 bg-amber-300 p-3 m-3 rounded hover:bg-amber-500"
       >
         {isOn ? "ON" : "OFF"}
       </button>
-    </>
+    </div>
   );
 };
 
